@@ -1,13 +1,12 @@
-import MainSlider from "@/components/MainSlider/page";
-import CategorySlider from "@/components/CategorySlider/page";
-import FeaturedProducts from "@/components/FeaturedProducts/page";
-
+import MainSlider from "../components/MainSlider/page";
+import CategorySlider from "../components/CategorySlider/page";
+import Featuredproducts from "../components/Featuredproducts/page";
 export default function Home() {
   return (
     <main>
       <MainSlider />
       <CategorySlider />
-      <FeaturedProducts />
+      <Featuredproducts />
     </main>
   );
 }
