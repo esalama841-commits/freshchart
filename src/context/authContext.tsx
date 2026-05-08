@@ -1,9 +1,9 @@
 'use client';
 import { createContext, useContext, useEffect, useState } from 'react';
 
-const AuthContext = createContext<any>(null);
+ export const AuthContext = createContext<any>(null);
 
-export function AuthProvider({ children }: { children: React.ReactNode }) {
+export default function AuthProvider({ children }: { children: React.ReactNode }) {
   const [userToken, setUserToken] = useState<string | null>(null);
 useEffect(() => {
   if (typeof window !== 'undefined') {
